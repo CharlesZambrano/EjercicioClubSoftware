@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO DE SESION</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="css/estilosIndex.css">
+	
+</head>
+<body>
+        <main>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h2>Sis. Gestion de usuarios</h2>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h1>Real Madrid CF</h1>
+                        <button id="btn__registrarse">Saber más</button>
+                    </div>
+                </div>
+                <!-- Formulario de Login -->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form class="formulario__login" id="f1" >
+                        <h2>Iniciar Sesión</h2>
+                        <input name="usuarioLog" type="text" id="usuario" placeholder="Usuario" autocomplete="off" onChange="validarUsuarios()">
+                        <input type="password" id="clave" placeholder="Contraseña" autocomplete="off" onChange="validarClave()">
+                        <button type="button" onClick="Acceso()" id="copiar">Entrar</button>
+                    </form>
+					<form class="formulario__register">
+                      <img src="images/INDEX.jpg" width="340" height="510" alt="Cargando imagen..."/>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script>
+			function cloneFormularios( $frm1 , $frm2 ) {
+				$(':input[name]', $frm2).val(function() {
+					return $(':input[name=' + this.name + ']', $frm1).val();
+
+				});
+			}
+			//Al hacer click en un btn copiar
+			$('#copiar').on('click', function() {
+				cloneFormularios(  $('#f1') , $('#f2')  );
+			});
+	</script>
+</body>
+</html>
