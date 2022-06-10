@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+.error{
+	background: #FF4C4C;
+	padding: 10px;
+	border-radius: 7px
+}
+
+.correcto{
+	background: #81C081;
+	padding: 10px;
+	border-radius: 7px;
+}
+  
+.info p {
+	color: #ccc;
+	font-size: 12px;
+	text-align: right;
+}
+  
+

@@ -1,0 +1,3 @@
+1750329045,Charles Zambrano,charles@gmail.com,czambrano,zambrano123@,Activo
+1752502128,Rodney Armas,armas@gmail.com,rcarmas,armas123@,Activo
+1715399158,Mariela Balseca,msbd@gmail.com,mari,mari123@,Activo

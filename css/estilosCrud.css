@@ -1,0 +1,299 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	background: #fff;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* ----- ----- HEADER ----- ----- */
+header {
+	width: 100%;
+	text-align: center;
+	padding: 60px 0;
+}
+
+header h1 {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+
+header h2 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 24px;
+	color: #989898;
+}
+
+/* ----- ----- MAIN ----- ----- */
+main {
+	width: 100%;
+}
+
+main nav {
+	width: 100%;
+	display: flex;
+	margin-top: -40px;
+}
+
+main nav .btn-menu {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border: 1px solid #000;
+	background: transparent;
+	cursor: pointer;
+	font-size: 28px;
+	margin-right: 20px;
+	transition: .3s ease all;
+}
+
+main nav .btn-menu:hover {
+	border:1px solid #828282;
+	color: #828282;
+}
+
+.search {
+	margin-top: 18px;
+}
+
+main nav .banner {
+	display: inline-block;
+	width: 100%;
+	background: url("../images/BANNER.jpg");
+	background-size: cover;
+	text-align: center;
+	height: 65px;
+	line-height: normal;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#usuario{
+	border: none;
+	align-content: center;
+	text-align: center;
+	height: 25px;
+	box-shadow: 0 0 0px 1000px #fff inset;
+	font-size: 15px;
+}
+
+#clave{
+	display: none;
+}
+
+#logo {
+	margin-bottom: 20px;
+}
+
+/* ------------------------- */
+/* Pushbars: Estilos Generales */
+/* ------------------------- */
+.pushbar {
+	background: black;
+	color: white;
+	padding: 20px;
+}
+.pushbar .btn-cerrar.derecha{
+	text-align: right;
+}
+.pushbar .btn-cerrar.izquierda{
+	text-align:left;
+}
+.pushbar .btn-cerrar button{
+	background: none;
+	color: #808080;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* ----- ----- Pushbar: LATERAL IZQUIERDO ----- ----- */
+
+.pushbar-menuLateral a {
+	display: block;
+	color: #AAAAAA;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(112,112,112, .60);
+	font-weight: 300;
+	font-size: 18px;
+	transition: .3s ease color;
+}
+
+.pushbar-menuLateral a:hover {
+	color: #fff;
+}
+/* ----- ----- Pushbar: LATERAL DERECHO ----- ----- */
+
+/* ----- ----- Pushbar: SUBMENU SUPERIOR ----- ----- */
+
+.pushbar-top .contenedor{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.pushbar-top figcaption {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.pushbar-top a {
+	color: #fff;
+	max-width: 320px;
+}
+
+.pushbar-top a img{
+	width: 100%;
+}
+
+.invisible {
+	display: none;
+}
+
+/* ----- ----- Pushbar: Formulario Newsletter  ----- ----- */
+
+/* ------------------------- */
+/* MEDIA QUERIES */
+/* ------------------------- */
+@media screen and (max-width: 600px) {
+	header h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	header h2 {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	main nav .banner {
+		font-size: 14px;
+	}
+
+	main .productos {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main .productos figure {
+		margin-bottom: 40px;
+	}
+	
+	.pushbar-top figcaption{
+		font-size: 14px;
+	}
+}
+@media (max-width:1024px) {
+	header h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	header h2 {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	main nav .banner {
+		font-size: 14px;
+	}
+
+	main .productos {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main .productos figure {
+		margin-bottom: 40px;
+	}
+	
+	.pushbar-top figcaption{
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width:768px) {
+    header h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	header h2 {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	main nav .banner {
+		font-size: 14px;
+	}
+
+	main .productos {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main .productos figure {
+		margin-bottom: 40px;
+	}
+	
+	.pushbar-top figcaption{
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width:500px) {
+    header h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	header h2 {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	main nav .banner {
+		font-size: 14px;
+	}
+
+	main .productos {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main .productos figure {
+		margin-bottom: 40px;
+	}
+	
+	.pushbar-top figcaption{
+		font-size: 14px;
+	}
+}
